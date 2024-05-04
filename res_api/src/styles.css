@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Estilo general del carrusel */
+#controls-carousel {
+    background: radial-gradient(ellipse at center, #0d1d31 0%, #000000 100%);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  /* Imágenes del carrusel */
+  #controls-carousel img {
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #controls-carousel img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Botones de navegación */
+  #controls-carousel button span {
+    background: linear-gradient(45deg, #00b8d4, #0052d4);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    transition: background 0.3s ease-in-out;
+  }
+  
+  #controls-carousel button span:hover {
+    background: linear-gradient(45deg, #00d4b8, #5200d4);
+  }
+  
+  #controls-carousel button svg {
+    color: #ffffff;
+    filter: drop-shadow(0 0 5px rgba(0, 255, 255, 0.5));
+  }
+  
+  /* Título del carrusel */
+  .text-3xl.font-bold.underline {
+    color: #00ff9f;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+  }
